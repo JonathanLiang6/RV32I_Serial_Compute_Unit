@@ -1,0 +1,103 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Dec 15 15:24:20 2024
+| Host         : zzz running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file sccomp_control_sets_placed.rpt
+| Design       : sccomp
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |   165 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      2 |            1 |
+|      3 |            2 |
+|      6 |            1 |
+|      8 |            2 |
+|      9 |            1 |
+|    16+ |           25 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            2 |
+| No           | No                    | Yes                    |            2191 |         1474 |
+| No           | Yes                   | No                     |              32 |           26 |
+| Yes          | No                    | No                     |              32 |           24 |
+| Yes          | No                    | Yes                    |              81 |           26 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-----------------------+------------------------------------+------------------+----------------+
+|     Clock Signal    |     Enable Signal     |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++---------------------+-----------------------+------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG      |                       | U_DM/rstn                          |                1 |              1 |
+|  Clk_instr_BUFG     |                       | U_DM/rstn                          |                1 |              2 |
+|  Clk_CPU_BUFG       |                       |                                    |                2 |              3 |
+|  u_seg7x16/seg7_clk |                       | u_seg7x16/i_data_store[61]_i_2_n_2 |                1 |              3 |
+|  Clk_CPU_BUFG       | sw_i_IBUF[0]          | U_RF/rstn_0                        |                2 |              6 |
+|  clk_IBUF_BUFG      |                       | U_DM/rstn_0                        |                4 |              8 |
+|  Clk_CPU_BUFG       | dmem_addr[7]_i_1_n_2  | U_DM/rstn                          |                3 |              8 |
+|  Clk_CPU_BUFG       | dmem_data[12]_i_1_n_2 | U_PC/rstn                          |                7 |              9 |
+|  Clk_CPU_BUFG       | sw_i_IBUF[0]          | U_PC/rstn                          |                6 |             26 |
+|  Clk_CPU_BUFG       |                       | U_PC/rstn                          |               11 |             27 |
+|  clk_IBUF_BUFG      |                       | U_PC/rstn                          |                7 |             27 |
+|  Clk_CPU_BUFG       | reg_data[31]_i_1_n_2  |                                    |               24 |             32 |
+|  Clk_CPU_BUFG       | reg_addr[0]_i_1_n_2   | U_PC/rstn                          |                8 |             32 |
+|  Clk_CPU_BUFG       |                       | alu_addr[2]                        |               26 |             32 |
+|  Clk_instr_BUFG     |                       | U_RF/rstn                          |               54 |             54 |
+|  Clk_CPU_BUFG       |                       | U_RF/rstn                          |               34 |             67 |
+|  clk_IBUF_BUFG      |                       | u_seg7x16/i_data_store[61]_i_2_n_2 |               24 |             72 |
+|  Clk_CPU_BUFG       |                       | U_RF/rstn_0                        |               40 |            115 |
+|  Clk_CPU_BUFG       |                       | U_RF/rf[11][23]_C_i_2_n_2          |               53 |            121 |
+|  Clk_CPU_BUFG       |                       | U_RF/rf[15][22]_C_i_2_n_2          |               50 |            121 |
+|  Clk_CPU_BUFG       |                       | U_RF/rf[19][20]_C_i_2_n_2          |               40 |            121 |
+|  Clk_CPU_BUFG       |                       | U_RF/rf[23][18]_C_i_2_n_2          |               49 |            121 |
+|  Clk_CPU_BUFG       |                       | U_RF/rf[27][16]_C_i_2_n_2          |               47 |            121 |
+|  Clk_CPU_BUFG       |                       | U_RF/rf[31][15]_C_i_2_n_2          |               49 |            121 |
+|  Clk_CPU_BUFG       |                       | U_RF/rf[7][25]_C_i_2_n_2           |               49 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[106][0]_C_i_1_n_2        |              121 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[121][1]_C_i_1_n_2        |              121 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[60][5]_C_i_1_n_2         |              119 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[75][6]_C_i_1_n_2         |              121 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[30][3]_C_i_1_n_2         |              118 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[15][2]_C_i_1_n_2         |              119 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[90][7]_C_i_1_n_2         |              121 |            121 |
+|  Clk_instr_BUFG     |                       | U_DM/dmem[45][4]_C_i_1_n_2         |              120 |            121 |
++---------------------+-----------------------+------------------------------------+------------------+----------------+
+
+

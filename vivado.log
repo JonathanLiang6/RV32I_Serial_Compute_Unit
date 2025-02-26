@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Dec 30 21:52:34 2024
+# Process ID: 39208
+# Current directory: D:/大学/学习/大二上/专业课/祭祖/Lab/111
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29244 D:\大学\学习\大二上\专业课\祭祖\Lab\111\RF.xpr
+# Log file: D:/大学/学习/大二上/专业课/祭祖/Lab/111/vivado.log
+# Journal file: D:/大学/学习/大二上/专业课/祭祖/Lab/111\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/大学/学习/大二上/专业课/祭祖/Lab/111/RF.xpr
+INFO: [Project 1-313] Project file moved from 'D:/RF' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/大学/学习/大二上/专业课/祭祖/qqweixin/WeChat Files/wxid_a6olue85xr2522/FileStorage/File/2024-11/Test_8_Instr1.coe', nor could it be found using path 'D:/../qqweixin/WeChat Files/wxid_a6olue85xr2522/FileStorage/File/2024-11/Test_8_Instr1.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/大学/学习/大二上/专业课/祭祖/Lab/111/qqweixin/WeChat Files/wxid_a6olue85xr2522/FileStorage/File/2024-11/Test_8_Instr1.coe', nor could it be found using path 'D:/RF/qqweixin/WeChat Files/wxid_a6olue85xr2522/FileStorage/File/2024-11/Test_8_Instr1.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx_Vivado_SDK_2018.3_1207_2324/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 30 21:54:16 2024...
+_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 30 21:54:29 2024...
