@@ -16,5 +16,6 @@
 *.bat linguist-language=none
 *.rpx linguist-language=none
 *.vdi linguist-language=none
-*.coe linguist-language=none
 *.lpr linguist-language=none
+*.vhd linguist-language=none
+*.vhdl linguist-language=none
